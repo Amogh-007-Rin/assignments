@@ -14,7 +14,7 @@ app.use(function(req, res, next) {
 });
 
 app.get('/user', function(req, res) {
-  res.status(200).json({ name: 'john' });
+  res.status(200).json({ name : "Jhon", requestCount });
 });
 
 app.post('/user', function(req, res) {
@@ -25,4 +25,4 @@ app.get('/requestCount', function(req, res) {
   res.status(200).json({ requestCount });
 });
 
-module.exports = app;
+app.listen(3000)
